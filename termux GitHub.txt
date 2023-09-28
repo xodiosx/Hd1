@@ -1,6 +1,0 @@
-pkg update
-pkg install git
-
-termux-setup-storage
-cd storage/shared/folder
-git init
