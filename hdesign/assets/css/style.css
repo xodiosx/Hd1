@@ -104,7 +104,7 @@ body{
 	font-size: 14px;
 	background: #232A56;
 
-  background-image: linear-gradient(-45deg, #232A56, #332A56, #232A56);
+  background-image: linear-gradient(-45deg, #fff, #fff, #fff);
   background-size: 400% 400%;
   -webkit-animation: gradient-example-1 5s ease infinite;
           animation: gradient-example-1 5s ease infinite;
@@ -275,9 +275,10 @@ margin-left: 50px;
 	padding: 100px 0px;
 }
 p{
-	color: #ffffff;
-font-weight:70;
+	color: #000;
+font-weight:700;
 font-size:50px;
+
 
 //text-align: left;
 }
@@ -407,6 +408,7 @@ h2.title span{
 	color: #fff!important;
 	line-height: 40px;
 	padding-top: 25px;
+height: 80px;
 }
 .navbar-brand span{
 	color: #AC6DAA;
@@ -488,7 +490,8 @@ text-align: center;
 .service-box p{
 	font-size: 16px;
 	line-height: 30px;
-color: #fff;
+color: #000;
+font-weight: 700;
 }
 
 /*section-skills
@@ -550,14 +553,16 @@ color: #fff;
 }
 .resume-desc p{
 	margin-top: -12px;
-color: #fff;
+color: #000;
+font-weight: 700;
 }
 .resume-box{
 background: #232A56;
 	margin-bottom: 80px;
 }
 .resume-title p{
-color: #fff;
+color: #000;
+font-weight: 700;
 }
 .resume-box.last{
 	margin-bottom: 0px;
@@ -630,7 +635,7 @@ background: #232A56;
 #section-portfolio
 .section-heading p{
 	margin-bottom: 100px;
-color: #fff;
+color: #000;
 }
 .portfolio-box {
 	position: relative;
@@ -1138,7 +1143,7 @@ color: #fff;
 	}
 	.skill-desc p{
 		margin-bottom: 40px;
-color: #fff;
+color: #232A56;
 	}
 	.resume-inner p{
 		margin-bottom: 40px;
