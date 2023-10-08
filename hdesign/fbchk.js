@@ -52,7 +52,7 @@ alert( "Welcome back " + currentuser.email)
   
 } else {
   // No user is signed in.
-
+//alert("Welcome back ");
 if (currentuser == null){
 alert("please login first")
 window.location=("login/");
