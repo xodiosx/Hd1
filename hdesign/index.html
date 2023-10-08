@@ -184,7 +184,7 @@ alert( "Welcome back " + currentuser.email)
 
 if (currentuser == null){
 alert("please login first")
-window.location=("login/");
+window.location=("Login/");
 }
 }
 
@@ -203,7 +203,7 @@ alert(uidu);
             remove(ref(db, "uid/"+ enterID))
             .then(()=>{
                 alert("logged out");
-window.location=("login/");
+window.location=("Login/");
             })
             .catch((error)=>{
                 alert(error);
