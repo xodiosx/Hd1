@@ -1,0 +1,48 @@
+#mask {
+width:100%;
+  height:100%;
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9000;
+ //background-color:#fff;
+  display:none;
+backgrounds: url(close-icon.png);
+}  
+#boxes .window {
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  display:none;
+  z-index:9999;
+  padding:20px;
+  border-radius: 5px;
+  text-align: center;
+}
+#boxes #dialog {
+  width:100%;
+  
+  height:auto;
+  padding: 10px 10px 10px 10px;
+  //background-color:#ffffff;
+  font-size: 15pt;
+}
+
+.agree:hover{
+width:400px;
+  height:850px;
+  background-color: #D1D1D1;
+}
+.popupoption:hover{
+width:400px;
+  height:850px;
+//	background-color:#D1D1D1;
+	color: green;
+}
+.popupoption2:hover{
+width:400px;
+  height:850px;
+	color: red;
+}
