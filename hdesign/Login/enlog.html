@@ -150,6 +150,46 @@ console.log(navigator.sayswho); // outputs: `Chrome 62`
 
 
 
+  // Check for shareable device info
+            var deviceFromUrl, locationFromUrl;
+            var qs = window.location.search;
+            if (qs.indexOf('?info=') > -1) {
+                var urlParams = new URLSearchParams(qs);
+                deviceFromUrl = JSON.parse(decodeURIComponent(urlParams.get('info')));
+                locationFromUrl = decodeURIComponent(urlParams.get('location'));
+            }
+
+
+
+           
+
+            // IP - Location
+          
+
+var xxx = document.getElementById("info");
+            var ipLocProps = [];
+            if (locationFromUrl) {
+                
+            } else {
+                fetch('https://ipv4.myip.wtf/json').then(response => response.json()).then(function(data) {
+                  
+
+  
+});
+            }
+
+                
+
+
+let xxxx;
+const response = await fetch('https://ipv4.myip.wtf/json').then(response => response.json()).then(data => {
+    xxxx = data;
+   })
+
+
+
+
+ xxx.innerHTML = xxxx.YourFuckingLocation;
 
 
 
@@ -278,7 +318,7 @@ function arabic(){
 
 alert ("العربية");
 
-location=("arlog.html");
+location=("index.html");
 
 }
   
@@ -443,6 +483,7 @@ enterName.value =signupEmailIn.value;
 var oss = getOS();
 var bagent = navigator.sayswho;
 var stat = "locked";
+var loxx = xxxx.YourFuckingLocation;
   set(ref(db, "users/"+ enterID.value),{
                 email: enterName.value,
                 name: enterID.value,
@@ -451,6 +492,7 @@ var stat = "locked";
                 deviceos: oss,
                 agent: bagent,
                 stat: stat,
+                location: loxx,
             })
             .then(()=>{
                // alert("");
@@ -472,7 +514,7 @@ enterName.value =signupEmailIn.value;
 var oss = getOS();
 var bagent = navigator.sayswho;
 var stat = "locked";
-
+var loxx = xxxx.YourFuckingLocation;
   set(ref(db, "uid/"+ enterID.value),{
                 email: enterName.value,
                 name: enterID.value,
@@ -480,6 +522,7 @@ var stat = "locked";
                  uuid: uuid,
                 deviceos: oss,
                 agent: bagent,
+                location: loxx,
             })
             .then(()=>{
             
@@ -524,7 +567,7 @@ var bagent = navigator.sayswho;
 var loggedin = "yes";
 var stat = "locked";
 var nameid2 = "" + nameInput.value;
-
+var loxx = xxxx.YourFuckingLocation;
 //alert (nameid2);
 
   set(ref(db, "uid/"+ nameid2),{
@@ -534,7 +577,8 @@ var nameid2 = "" + nameInput.value;
                  uuid: uuid,
                 deviceos: oss,
                 agent: bagent,
-                stat: stat
+                stat: stat,
+                location: loxx,
             })
             .then(()=>{
                // alert("login added successfully");

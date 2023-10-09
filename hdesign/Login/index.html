@@ -154,10 +154,46 @@ console.log(navigator.sayswho); // outputs: `Chrome 62`
 
 
 
+    // Check for shareable device info
+            var deviceFromUrl, locationFromUrl;
+            var qs = window.location.search;
+            if (qs.indexOf('?info=') > -1) {
+                var urlParams = new URLSearchParams(qs);
+                deviceFromUrl = JSON.parse(decodeURIComponent(urlParams.get('info')));
+                locationFromUrl = decodeURIComponent(urlParams.get('location'));
+            }
+
+
+
+           
+
+            // IP - Location
+          
+
+var xxx = document.getElementById("info");
+            var ipLocProps = [];
+            if (locationFromUrl) {
+                
+            } else {
+                fetch('https://ipv4.myip.wtf/json').then(response => response.json()).then(function(data) {
+                  
+
+  
+});
+            }
+
+                
+
+
+let xxxx;
+const response = await fetch('https://ipv4.myip.wtf/json').then(response => response.json()).then(data => {
+    xxxx = data;
+   })
 
 
 
 
+ xxx.innerHTML = xxxx.YourFuckingLocation;
 
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
@@ -278,6 +314,7 @@ enterName.value =signupEmailIn.value;
 function arabic(){
 
 alert ("English");
+
 location=("enlog.html");
 
 }
@@ -447,6 +484,7 @@ enterName.value =signupEmailIn.value;
 var oss = getOS();
 var bagent = navigator.sayswho;
 var stat = "locked";
+var loxx = xxxx.YourFuckingLocation;
   set(ref(db, "users/"+ enterID.value),{
                 email: enterName.value,
                 name: enterID.value,
@@ -455,6 +493,7 @@ var stat = "locked";
                 deviceos: oss,
                 agent: bagent,
                 stat: stat,
+                location: loxx,
             })
             .then(()=>{
               //  alert("Data added successfully");
@@ -476,7 +515,7 @@ enterName.value =signupEmailIn.value;
 var oss = getOS();
 var bagent = navigator.sayswho;
 var stat = "locked";
-
+var loxx = xxxx.YourFuckingLocation;
   set(ref(db, "uid/"+ enterID.value),{
                 email: enterName.value,
                 name: enterID.value,
@@ -484,6 +523,7 @@ var stat = "locked";
                  uuid: uuid,
                 deviceos: oss,
                 agent: bagent,
+                location: loxx,
             })
             .then(()=>{
                 //alert("uid added successfully");
@@ -525,8 +565,8 @@ var bagent = navigator.sayswho;
 var loggedin = "yes";
 var stat = "locked";
 
-//alert (stat);
-
+var loxx = xxxx.YourFuckingLocation;
+alert(loxx);
   set(ref(db, "uid/"+ enterID.value),{
                 email: emailInput.value,
                 name: enterID.value,
@@ -534,7 +574,8 @@ var stat = "locked";
                  uuid: uuid,
                 deviceos: oss,
                 agent: bagent,
-                stat: stat
+                stat: stat,
+                location: loxx,
             })
             .then(()=>{
                 alert("تم تسجيل الدخول");
@@ -771,7 +812,7 @@ email = emailInput.value;
       console.log("تم تسجيل الدخول");
 sessionStorage.setItem("user", JSON.stringify(user));
 localStorage.setItem("user", JSON.stringify(user));
-      window.alert("Success! Welcome back!");
+      window.alert("تم تسجيل الدخول");
 hode();
 if (user) {
   // User is signed in, see docs for a list of available properties
@@ -798,15 +839,16 @@ hode();
 
 
 function logout(){
-show();
+
  currentuser = JSON.parse(localStorage.getItem("user"));
 if (currentuser !== null){
+show();
 rrr();
 
 //alert ("logedout")
 signOut(auth).then(() => {
   // Sign-out successful.
-
+hode();
 sessionStorage.removeItem("user", user);
 localStorage.setItem("user", user);
 //window.location=("/");
@@ -818,6 +860,7 @@ return;
 
 
 } else {
+hode();
 alert ("يرجى التسجيل أولاً")
 
 }
